@@ -7,14 +7,14 @@ function slide() {
 	button_left.onclick = function() {
 		left += 500
 		lenta.style.left = left + 'px'		
-		if (left > -500) {
-			left = -1500
+		if (left >= -500) {
+			left = -2500
 		}
 	}
 	button_right.onclick = function() {
 		left -= 500
 		lenta.style.left = left + 'px'
-		if (left <= -1000) {
+		if (left <= -2000) {
 			left = 500
 		}
 	}
