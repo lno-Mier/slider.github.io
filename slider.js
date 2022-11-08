@@ -13,10 +13,10 @@ function slide() {
 	}
 	button_right.onclick = function() {
 		left -= 500
-		lenta.style.left = left + 'px'
-		if (left <= -2000) {
-			left = 500
+		if (left <= -2500) {
+			left = 0
 		}
+		lenta.style.left = left + 'px'		
 	}
 }
 slide()
