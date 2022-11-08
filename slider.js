@@ -5,11 +5,11 @@ function slide() {
 	let button_left = document.getElementById('left')
 	let lenta = document.querySelector('.lenta')
 	button_left.onclick = function() {
-		left += 500
-		lenta.style.left = left + 'px'		
-		if (left >= -500) {
-			left = -2500
+		left += 500		
+		if (left >= 500) {
+			left = -2000
 		}
+		lenta.style.left = left + 'px'
 	}
 	button_right.onclick = function() {
 		left -= 500
